@@ -22,4 +22,13 @@ contract Calculator {
        emit Calculation(msg.sender,
             "Add", value1, value2, result);
   }
+
+  function subtract(uint value1, uint value2) public {
+    from = msg.sender;
+    action = "Subtract";
+    result = value1 - value2;
+
+    emit Calculation(msg.sender
+            "Subtract", value1, value2, result);
+  }
 }
